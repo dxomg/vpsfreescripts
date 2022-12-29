@@ -12,12 +12,12 @@ echo "__________________________________________________________"
 echo ""
 echo ""
 echo "Please make an account at https://playit.gg"
-echo "a menu will appear in 5 seconds, when you log in into the program please press Ctrl + C"
+echo "Playit will ask you to log in in 5 seconds, please follow what it says"
 echo ""
 echo ""
 echo "__________________________________________________________"
 sleep 5
-./playit
+./playit -s
 clear
 pm2 start "./playit"
 echo "Available minecraft versions:"
