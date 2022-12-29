@@ -9,8 +9,8 @@ pm2 startup
 wget -O playit https://raw.githubusercontent.com/dxomg/plygg/main/playit-0.9.3
 chmod 755 playit
 echo "Available minecraft versions:"
-echo "1 -> 1.18.2"
-echo "2 -> 1.16.5"
+echo "1 -> 1.18.2 (Recommended 4Gb+ ram)"
+echo "2 -> 1.16.5 (Recommended 4Gb+ ram)"
 echo "3 -> 1.12.2"
 echo "4 -> 1.8.8"
 echo ""
