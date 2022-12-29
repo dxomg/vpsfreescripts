@@ -1,3 +1,5 @@
+echo "Installing Dependencies..."
+sleep 1
 apt update
 apt install curl -y
 curl -s https://deb.nodesource.com/setup_16.x | sudo bash
