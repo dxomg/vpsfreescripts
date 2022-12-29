@@ -105,4 +105,4 @@ echo "__________________________________________________________"
 sleep 5
 pm2 start "./playit -s"
 pm2 save
-pm2 logs 0
+pm2 logs 1
