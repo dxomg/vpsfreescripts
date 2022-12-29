@@ -77,7 +77,7 @@ case $minecraftv in
 
     4)
         echo "Selected: ${minecraftv} > 1.8.8"
-        mkdir -p mcserver/cache/ &&  wget -O mcserver/cache/mojang_1.8.8.jar https://drive.google.com/uc?id=1FEezlJMtzSAfaXWt3WmNzoc2MnrN-qAm&export=download
+        mkdir -p mcserver/cache/ &&  wget -O mcserver/cache/mojang_1.8.8.jar "https://drive.google.com/uc?id=1FEezlJMtzSAfaXWt3WmNzoc2MnrN-qAm&export=download"
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.8.8/builds/445/downloads/paper-1.8.8-445.jar
