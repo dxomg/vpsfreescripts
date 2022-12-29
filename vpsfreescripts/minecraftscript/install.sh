@@ -32,7 +32,6 @@ if [ "$minecraftv" = 1 ]  ; then
     echo "pm2 attach 1"
     echo ""
     echo "For more commands please check the help for pm2"
-fi
 
 elif [ "$minecraftv" = 2 ]  ; then
     echo "Selected: ${minecraftv} > 1.16.5"
@@ -50,7 +49,6 @@ elif [ "$minecraftv" = 2 ]  ; then
     echo "pm2 attach 1"
     echo ""
     echo "For more commands please check the help for pm2"
-fi
 
 elif [ "$minecraftv" = 3 ]  ; then
     echo "Selected: ${minecraftv} > 1.12.2"
@@ -68,7 +66,6 @@ elif [ "$minecraftv" = 3 ]  ; then
     echo "pm2 attach 1"
     echo ""
     echo "For more commands please check the help for pm2"
-fi
 
 elif [ "$minecraftv" = 4 ]  ; then
     echo "Selected: ${minecraftv} > 1.8.8"
