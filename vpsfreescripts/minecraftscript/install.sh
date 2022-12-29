@@ -18,6 +18,7 @@ echo ""
 echo "__________________________________________________________"
 sleep 5
 ./playit
+clear
 pm2 start "./playit"
 echo "Available minecraft versions:"
 echo "1 -> 1.18.2"
