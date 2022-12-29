@@ -39,7 +39,6 @@ case $minecraftv in
     2)
         echo "Selected: ${minecraftv} > 1.16.5"
         mkdir -p mcserver/cache/ && wget -O mcserver/cache/mojang_1.16.5.jar "https://drive.google.com/uc?id=14a-_cH_UTbJDnk3CrpDuN5fZEcEyWq1M&export=download&confirm=t&uuid=7b6920de-983c-443c-ae9c-54c5cb49d4eb"
-        wget -O mcserver/cache/patched_1.16.5.jar "https://drive.google.com/uc?id=1BMvtIAmE2q4xcDSTIRbUSA_xn71c9kN4&export=download&confirm=t&uuid=1887e41e-04cd-4536-9bfe-1ea77f26fab8"
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
@@ -94,7 +93,7 @@ case $minecraftv in
         echo "For more commands please check the help for pm2"
         ;;
 esac
-
+cd ..
 echo "__________________________________________________________"
 echo ""
 echo ""
@@ -104,6 +103,6 @@ echo "When you're done press Ctrl + C and it should be done"
 echo ""
 echo "__________________________________________________________"
 sleep 5
-pm2 start "./playit"
+pm2 start "./playit -s"
 pm2 save
 pm2 logs 0
