@@ -19,7 +19,7 @@ read -p "Enter minecraft version: " minecraftv
 case $minecraftv in
     1)
         echo "Selected: ${minecraftv} > 1.18.2"
-        wget --force-directories -O mcserver/cache/mojang_1.18.2.jar "https://drive.google.com/uc?id=1WJ0etteMz3il7gs5iJhDyjoF1t4L35UN&export=download&confirm=t&uuid=f82a51cd-60da-4672-9ec8-445e88cff74c"
+        mkdir -p mcserver/cache/ && wget -O mcserver/cache/mojang_1.18.2.jar "https://drive.google.com/uc?id=1WJ0etteMz3il7gs5iJhDyjoF1t4L35UN&export=download&confirm=t&uuid=f82a51cd-60da-4672-9ec8-445e88cff74c"
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/388/downloads/paper-1.18.2-388.jar
@@ -38,8 +38,8 @@ case $minecraftv in
 
     2)
         echo "Selected: ${minecraftv} > 1.16.5"
-        wget --force-directories -O mcserver/cache/mojang_1.16.5.jar "https://drive.google.com/uc?id=14a-_cH_UTbJDnk3CrpDuN5fZEcEyWq1M&export=download&confirm=t&uuid=7b6920de-983c-443c-ae9c-54c5cb49d4eb"
-        wget --force-directories -O mcserver/cache/patched_1.16.5.jar "https://drive.google.com/uc?id=1BMvtIAmE2q4xcDSTIRbUSA_xn71c9kN4&export=download&confirm=t&uuid=1887e41e-04cd-4536-9bfe-1ea77f26fab8"
+        mkdir -p mcserver/cache/ && wget -O mcserver/cache/mojang_1.16.5.jar "https://drive.google.com/uc?id=14a-_cH_UTbJDnk3CrpDuN5fZEcEyWq1M&export=download&confirm=t&uuid=7b6920de-983c-443c-ae9c-54c5cb49d4eb"
+        wget -O mcserver/cache/patched_1.16.5.jar "https://drive.google.com/uc?id=1BMvtIAmE2q4xcDSTIRbUSA_xn71c9kN4&export=download&confirm=t&uuid=1887e41e-04cd-4536-9bfe-1ea77f26fab8"
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
@@ -58,7 +58,7 @@ case $minecraftv in
 
     3)
         echo "Selected: ${minecraftv} > 1.12.2"
-        wget --force-directories -O mcserver/cache/mojang_1.12.2.jar "https://drive.google.com/uc?id=15qfDkTE2SHyURkgsZnABDPpIMEjPGWuk&export=download&confirm=t&uuid=2e6b5563-74c5-4403-893c-c9172e20e530"
+        mkdir -p mcserver/cache/ && wget -O mcserver/cache/mojang_1.12.2.jar "https://drive.google.com/uc?id=15qfDkTE2SHyURkgsZnABDPpIMEjPGWuk&export=download&confirm=t&uuid=2e6b5563-74c5-4403-893c-c9172e20e530"
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.12.2/builds/1620/downloads/paper-1.12.2-1620.jar
@@ -77,7 +77,7 @@ case $minecraftv in
 
     4)
         echo "Selected: ${minecraftv} > 1.8.8"
-        wget --force-directories -O mcserver/cache/mojang_1.8.8.jar https://drive.google.com/uc?id=1FEezlJMtzSAfaXWt3WmNzoc2MnrN-qAm&export=download
+        mkdir -p mcserver/cache/ &&  wget -O mcserver/cache/mojang_1.8.8.jar https://drive.google.com/uc?id=1FEezlJMtzSAfaXWt3WmNzoc2MnrN-qAm&export=download
         sleep 1
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.8.8/builds/445/downloads/paper-1.8.8-445.jar
