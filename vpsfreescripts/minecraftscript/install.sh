@@ -43,7 +43,7 @@ case $minecraftv in
         cd mcserver
         wget -O server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
         echo "eula=true" > eula.txt
-        apt install openjdk-17-jre-headless -y
+        apt install openjdk-16-jre-headless -y
         pm2 start "java -jar server.jar"
         echo "Server is up and running!"
         echo "to check the logs do:"
