@@ -50,3 +50,7 @@ echo "*                                                                         
 read -p "Enter Input: " input
 case $input in  
     0) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/minecraftscript/install.sh);;
+    1) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/pvescripts/execall.sh);;
+    2) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/pvescripts/setnameserver.sh);;
+    3) echo "Comming Soon";;
+    4) echo "Under Development";;
