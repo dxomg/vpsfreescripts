@@ -50,3 +50,6 @@ case $input in
     0) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/minecraftscript/install.sh);;
     1) echo "Comming Soon";;
     2) echo "Under Development";;
+    *) echo "Unknown Identifier"
+       exit;;
+esac
