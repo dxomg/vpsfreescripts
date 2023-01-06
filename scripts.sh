@@ -47,3 +47,6 @@ echo "* [2] Run NameServer Script                                               
 echo "* [3] Comming Soon!                                                                                $"
 echo "* [4] Nuke Vps (If you messed up)                                                                         $"
 echo "*                                                                                                         $"
+read -p "Enter Input: " input
+case $input in  
+    0) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/minecraftscript/install.sh);;
