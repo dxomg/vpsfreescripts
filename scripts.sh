@@ -32,6 +32,7 @@ apt-get install git -y
 clear
 sleep 0.5
 echo " TMP files are now loaded"
+esac
 sleep 1;;
 figlet -c VPSFREE.ES
 sleep 1
@@ -56,5 +57,4 @@ case $input in
     2) echo "Under Development";;
     *) echo "Unknown Identifier"
        exit;;
-esac
 esac
