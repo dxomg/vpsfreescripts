@@ -15,8 +15,13 @@ if [ "$(id -u)" != "0" ]; then
 fi
 # ...
 
-
-echo "Updating Your tmp files"
+echo "Is this your first time using this script on this vm?"
+echo " [1] yes"
+echo " [2] no"
+sleep 0.5
+read -p "Enter Input (y/n): " input
+case $input in  
+  2) echo "Updating Your tmp files"
 apt update -y
 apt upgrade -y
 apt-get update -y
@@ -24,11 +29,11 @@ apt-get upgrade -y
 apt install zip unzip -y
 apt install figlet toilet -y
 apt-get install git -y
-
 clear
 sleep 0.5
 echo " TMP files are now loaded"
 sleep 1
+2)
 figlet -c VPSFREE.ES
 sleep 1
 echo ""
@@ -52,4 +57,5 @@ case $input in
     2) echo "Under Development";;
     *) echo "Unknown Identifier"
        exit;;
+esac
 esac
