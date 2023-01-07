@@ -21,7 +21,7 @@ echo " [2] no"
 sleep 0.5
 read -p "Enter Input (y/n): " input
 case $input in  
-  2) echo "Updating Your tmp files"
+  1) echo "Updating Your tmp files"
 apt update -y
 apt upgrade -y
 apt-get update -y
@@ -31,9 +31,9 @@ apt install figlet toilet -y
 apt-get install git -y
 clear
 sleep 0.5
-echo " TMP files are now loaded"
+echo " TMP files are now loaded";;
 esac
-sleep 1;;
+sleep 1
 figlet -c VPSFREE.ES
 sleep 1
 echo ""
