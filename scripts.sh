@@ -32,8 +32,7 @@ apt-get install git -y
 clear
 sleep 0.5
 echo " TMP files are now loaded"
-sleep 1
-2)
+sleep 1;;
 figlet -c VPSFREE.ES
 sleep 1
 echo ""
