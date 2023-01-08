@@ -51,6 +51,7 @@ echo "* [2] Install Basic Packages
                          "
 echo "* [3] Install Npm project in current directory"
 echo "* [4] Exit"
+echo"* [5] Reboot/Restart VPS"
 echo "*                                                                                            "
 read -p "Enter Input (1-4) :" input
 case $input in  
@@ -72,4 +73,9 @@ sudo systemctl enable --now pufferpanel;;
      apt install neofetch;;
   4) echo Shutting Down VpsFreeScripts....
     exit;;
+  5) figlet -c REBOOT
+     sleep 1
+     echo " Vps restarting in 5 seconds"
+     sleep 5
+      Reboot
    esac
