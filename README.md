@@ -3,7 +3,7 @@ Files for scripts of vpsfree
 
 Main Code:
 
-bash <(curl -s https://github.com/dxomg/vpsfreescripts/raw/main/main.sh)
+wget https://github.com/dxomg/vpsfreescripts/raw/main/main.sh && bash main.sh
 
 
 
