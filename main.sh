@@ -31,7 +31,6 @@ case $input in
     sudo pufferpanel user add
     sudo systemctl enable --now pufferpanel;;
     2)
-    apt install npm
     apt install git
     apt install neofetch;;
     3) echo "Exit" && exit;;
