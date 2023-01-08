@@ -32,6 +32,11 @@ case $input in
     sudo systemctl enable --now pufferpanel;;
     2)
     apt install git
-    apt install neofetch;;
+    apt install neofetch
+    echo "##############################"
+    echo ""
+    echo "Installed git and neofetch"
+    echo ""
+    echo "##############################";;
     3) echo "Exit" && exit;;
 esac
