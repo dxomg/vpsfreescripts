@@ -17,7 +17,7 @@ echo "* [1] Install PufferPanel"
 echo "* [2] Install Basic Packages"
 echo "* [3] Exit"
 
-read -p "Enter Input (1-3) :" input
+read -p "Enter Input (1-3): " input
 
 case $input in
 
