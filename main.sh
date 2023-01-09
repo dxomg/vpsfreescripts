@@ -24,8 +24,11 @@ read -p "Enter Input (0-5): " input
 case $input in
 
     0)
-    apt update && wget https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh && bash install.sh;;
+    apt update
+    wget https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh && bash install.sh;;
     1)
+    apt update
+    apt install curl -y
     curl -s https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/warpv6/install.sh | bash;;
     2)
     apt update && apt install curl -y
