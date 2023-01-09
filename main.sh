@@ -29,7 +29,7 @@ case $input in
     1)
     apt update
     apt install curl -y
-    curl -s https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/warpv6/install.sh | bash;;
+    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/warpv6/install.sh && bash install.sh;;
     2)
     apt update && apt install curl -y
     curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh | sudo bash
