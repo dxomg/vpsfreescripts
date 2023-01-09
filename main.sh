@@ -32,7 +32,7 @@ case $input in
     sudo pufferpanel user add
     sudo systemctl enable --now pufferpanel;;
     2)
-    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);;
     3)
     apt install git
     apt install neofetch
