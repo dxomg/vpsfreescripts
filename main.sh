@@ -14,8 +14,9 @@ echo "##########################################################################
 echo "*"
 echo "* [0] Install Minecraft Server Files"
 echo "* [1] Install PufferPanel"
-echo "* [2] Install Basic Packages"
-echo "* [3] Exit"
+echo "* [2] Install WebPage"
+echo "* [3] Install Basic Packages"
+echo "* [4] Exit"
 
 read -p "Enter Input (1-3): " input
 
@@ -31,6 +32,8 @@ case $input in
     sudo pufferpanel user add
     sudo systemctl enable --now pufferpanel;;
     2)
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh)
+    3)
     apt install git
     apt install neofetch
     echo "##############################"
@@ -38,5 +41,5 @@ case $input in
     echo "Installed git and neofetch"
     echo ""
     echo "##############################";;
-    3) echo "Exit" && exit;;
+    4) echo "Exit" && exit;;
 esac
