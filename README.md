@@ -3,8 +3,7 @@ Files for scripts of vpsfree
 
 Main Code:
 
-wget https://github.com/dxomg/vpsfreescripts/raw/main/main.sh && bash main.sh
-
+- bash -c "$(curl -fsSL https://github.com/dxomg/vpsfreescripts/raw/main/main.sh)"
 
 
 Install minecraft Ipv6 only vps:
