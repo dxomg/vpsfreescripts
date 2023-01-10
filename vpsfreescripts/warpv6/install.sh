@@ -8,8 +8,9 @@ else
     echo "When script starts connecting to warp please do Ctrl+C"
     echo "then do 'warp o'"
     echo "and then run this script again"
+    echo "Script will proceed in 10 seconds"
     echo ""
     echo "======================================================"
-    sleep 5
+    sleep 10
     wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh
 fi
