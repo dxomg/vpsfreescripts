@@ -1,7 +1,6 @@
 apt update
 apt install python3-pip
 pip install flask
-mkdir website && cd website
 
 echo "########################################"
 echo ""
@@ -19,6 +18,7 @@ read -p "> " ip
 case $ip in
 
     0)
+    mkdir website && cd website
     echo "from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -35,6 +35,7 @@ if __name__ == '__main__':
 
     echo "Now just run 'python3 website/main.py'";;
     1)
+    mkdir website && cd website
     echo "from flask import Flask, render_template
 app = Flask(__name__)
 
