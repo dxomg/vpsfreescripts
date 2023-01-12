@@ -44,7 +44,7 @@ def hello_world():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run('0.0.0.0',80) # <----- ip & port" > main.py
+    app.run('::',80) # <----- ip & port" > main.py
 
     mkdir templates/
     touch templates/index.html
