@@ -49,4 +49,6 @@ case $ip in
     touch templates/index.html
     echo "Hello World!  -  it seems to be woking!!!" > templates/index.html
 
-    echo "Now just run 'python3 website/main.py'"
+    echo "Now just run 'python3 website/main.py'";;
+    
+esac
