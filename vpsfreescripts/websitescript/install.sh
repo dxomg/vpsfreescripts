@@ -20,14 +20,14 @@ case $ip in
 
     0)
     echo "from flask import Flask, render_template
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    @app.route('/')
-    def hello_world():
-        return render_template('index.html')
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
-    if __name__ == '__main__':
-        app.run('0.0.0.0',80) # <----- ip & port" > main.py
+if __name__ == '__main__':
+    app.run('0.0.0.0',80) # <----- ip & port" > main.py
 
     mkdir templates/
     touch templates/index.html
@@ -36,14 +36,14 @@ case $ip in
     echo "Now just run 'python3 website/main.py'";;
     1)
     echo "from flask import Flask, render_template
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    @app.route('/')
-    def hello_world():
-        return render_template('index.html')
+@app.route('/')
+def hello_world():
+    return render_template('index.html')
 
-    if __name__ == '__main__':
-        app.run('::',80) # <----- ip & port" > main.py
+if __name__ == '__main__':
+    app.run('0.0.0.0',80) # <----- ip & port" > main.py
 
     mkdir templates/
     touch templates/index.html
