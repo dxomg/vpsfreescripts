@@ -3,6 +3,9 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+apt install sudo -y
+
+
 echo "#######################################################################################"
 echo "#"
 echo "#                                  VPSFREE.ES SCRIPTS"
