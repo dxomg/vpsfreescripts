@@ -45,7 +45,7 @@ case $input in
     wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh && bash install.sh;;
     4)
     wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh && bash install.sh;;
-    4)
+    5)
     apt install git
     apt install neofetch
     echo "##############################"
@@ -53,5 +53,5 @@ case $input in
     echo "Installed git and neofetch"
     echo ""
     echo "##############################";;
-    5) echo "Exit" && exit;;
+    6) echo "Exit" && exit;;
 esac
