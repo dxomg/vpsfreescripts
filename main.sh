@@ -46,8 +46,7 @@ case $input in
     4)
     wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh && bash install.sh;;
     5)
-    apt install git
-    apt install neofetch
+    apt install git neofetch sudo
     echo "##############################"
     echo ""
     echo "Installed git and neofetch"
