@@ -21,9 +21,10 @@ echo "* [2] Install PufferPanel"
 echo "* [3] Install WebPage"
 echo "* [4] Install CRDP/XRDP"
 echo "* [5] Install Basic Packages"
-echo "* [6] Exit"
+echo "* [6] Install Pterodactyl Panel
+echo "* [7] Exit"
 
-read -p "Enter Input (0-6): " input
+read -p "Enter Input (0-7): " input
 
 case $input in
 
@@ -52,5 +53,17 @@ case $input in
     echo "Installed git and neofetch"
     echo ""
     echo "##############################";;
-    6) echo "Exit" && exit;;
+    6)
+    echo "##############################"
+    echo ""
+    echo "Follow the tutorial on the discord"
+    echo ""
+    echo "Install warp first"
+    echo ""
+    echo "For help contact vincyxirt#1098"
+    echo ""
+    echo "##############################";;
+    apt update -y && apt upgrade -y && apt Install curl -y
+    bash <(curl -s https://pterodactyl-installer.se)
+    7) echo "Exit" && exit;;
 esac
