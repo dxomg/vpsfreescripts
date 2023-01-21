@@ -54,16 +54,6 @@ case $input in
     echo ""
     echo "##############################";;
     6)
-    echo "##############################"
-    echo ""
-    echo "Follow the tutorial on the discord"
-    echo ""
-    echo "Install warp first"
-    echo ""
-    echo "For help contact vincyxirt#1098"
-    echo ""
-    echo "##############################";;
-    apt update -y && apt upgrade -y && apt Install curl -y
-    bash <(curl -s https://pterodactyl-installer.se)
+    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/ptero/install.sh && bash install.sh;;
     7) echo "Exit" && exit;;
 esac
