@@ -21,7 +21,7 @@ echo "* [2] Install PufferPanel"
 echo "* [3] Install WebPage"
 echo "* [4] Install CRDP/XRDP"
 echo "* [5] Install Basic Packages"
-echo "* [6] Install Pterodactyl Panel
+echo "* [6] Install Pterodactyl Panel"
 echo "* [7] Exit"
 
 read -p "Enter Input (0-7): " input
