@@ -3,7 +3,7 @@ if warp h foo >/dev/null 2>&1; then
     echo ""
     echo "Warp detected, Proceeding in 10 seconds"
     echo ""
-    echo "For help contact vincyxirt#1098v or open Ticket"
+    echo "For help contact vincyxirt#1098 or open Ticket"
     echo ""
     echo "##############################"
     sleep 10
