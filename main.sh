@@ -45,7 +45,7 @@ case $input in
     chmod 755 playit
     echo "PLAYIT INSTALLATION COMPLETE! proceeding in 3s"
     sleep 3
-    ./playit
+    ./playit;;
     3)
     apt update && apt install curl -y
     curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh | sudo bash
