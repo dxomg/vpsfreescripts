@@ -5,7 +5,7 @@ Please do not share and post this code anywhere else without permission <br>
 # Stats
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=dxomg&repo=vpsfreescripts)](https://github.com/dxomg/vpsfreescripts)
 # GET A FREE VPS!!!
-This script is associated with VPSFREE.es which offers 100% free vps with no credit card and app installing verfication! <br> Want to join? <br>
+This script is associated with VPSFREE.es which offers 100% free vps with no credit card and no app installing verfication! <br> Want to join? <br>
 <a href="https://vpsfree.es/"> Click Me </a>
 # Contents of scripts
 
@@ -21,5 +21,6 @@ This script is associated with VPSFREE.es which offers 100% free vps with no cre
  • Pterodactyl Installation for ipv6 <br>
  • PufferPanel Installation <br>
  • Jexactyl Installation on Pterodactyl Core <br>
- • RDP installation (Debain , Linux)
+ • CRDP/XRDP installation (Debain , Linux)
+ • Playit Tunneling
 # Installation 
