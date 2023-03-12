@@ -21,6 +21,7 @@ This script is associated with VPSFREE.es which offers 100% free vps with no cre
  • Pterodactyl Installation for ipv6 <br>
  • PufferPanel Installation <br>
  • Jexactyl Installation on Pterodactyl Core <br>
- • CRDP/XRDP installation (Debain , Linux)
+ • CRDP/XRDP installation (Debain , Linux) <br>
  • Playit Tunneling
-# Installation 
+# Usage
+Launch Script : ```shell bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/main.sh)>
