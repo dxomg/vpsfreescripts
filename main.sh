@@ -72,7 +72,8 @@ case $input in
     sudo systemctl enable --now pufferpanel;;
     4)
     bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);;
-    5) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scan.sh);;
+    5) apt install php
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scan.sh);;
     6)
     bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh);;
     7)
