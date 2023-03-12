@@ -20,10 +20,10 @@ echo "* [1] Install Warp to enable Ipv4 on Ipv6 only"
 echo "* [2] Download Playit files to make tunnels to V4 & V6"
 echo "* [3] Install PufferPanel"
 echo "* [4] Install WebPage"
-echo "* [5] Install CRDP/XRDP"
-echo "* [6] Install Basic Packages"
-echo "* [7] Install Pterodactyl Panel"
-echo "* [8] Exit"
+echo "* [6] Install CRDP/XRDP"
+echo "* [7] Install Basic Packages"
+echo "* [8] Install Pterodactyl Panel"
+echo "* [9] Exit"
 
 read -p "Enter Input (0-7): " input
 
@@ -54,7 +54,7 @@ case $input in
     sudo systemctl enable --now pufferpanel;;
     4)
     bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);;
-    5) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scanner.sh);;
+    5) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scan.sh);;
     6)
     bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh);;
     7)
