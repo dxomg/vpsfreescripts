@@ -4,6 +4,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt install sudo -y
+# color codes
 
 
 echo "#######################################################################################"
@@ -19,7 +20,8 @@ echo "* [0] Install Minecraft Server Files"
 echo "* [1] Install Warp to enable Ipv4 on Ipv6 only"
 echo "* [2] Download Playit files to make tunnels to V4 & V6"
 echo "* [3] Install PufferPanel"
-echo "* [4] Install WebPage"
+echo "* [4] Launch Website"
+echo "* [5] Subdomain Scanner"
 echo "* [6] Install CRDP/XRDP"
 echo "* [7] Install Basic Packages"
 echo "* [8] Install Pterodactyl Panel"
