@@ -9,9 +9,9 @@ This script is associated with VPSFREE.es which offers 100% free vps with no cre
 <a href="https://vpsfree.es/"> Click Me </a>
 # Contents of scripts
 
-<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#features" > Features </a>
-<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#usage" > Usage </a>
-<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#contributers" > Contributers </a>
+<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#features" > Features </a> <br>
+<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#usage" > Usage </a> <br>
+<a href="https://github.com/dxomg/vpsfreescripts/blob/main/README.md#contributers" > Contributers </a> <br>
 
 
 # Features
