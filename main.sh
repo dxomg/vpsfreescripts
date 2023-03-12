@@ -31,14 +31,13 @@ case $input in
 
     0)
     apt update
-    wget -N https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh && bash install.sh;;
+    bash <(curl -s https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh)
     1)
     apt update
     apt install curl -y
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/warpv6/install.sh && bash install.sh;;
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/warpv6/install.sh);;
     2)
     apt update
-    apt install wget -y
     mkdir playit && cd playit
     wget https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/playit-0.9.3
     mv playit-0.9.3 playit
@@ -54,17 +53,18 @@ case $input in
     sudo pufferpanel user add
     sudo systemctl enable --now pufferpanel;;
     4)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh && bash install.sh;;
-    5)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh && bash install.sh;;
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);;
+    5) bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scanner.sh);;
     6)
-    apt install git neofetch sudo
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh);;
+    7)
+    apt install git neofetch sudo wget zip curl nodejs python
     echo "##############################"
     echo ""
-    echo "Installed git and neofetch"
+    echo "Installed resources"
     echo ""
     echo "##############################";;
-    7)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/ptero/install.sh && bash install.sh;;
-    8) echo "Exit" && exit;;
+    8)
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/ptero/install.sh);;
+    9) echo "Exit" && exit;;
 esac
