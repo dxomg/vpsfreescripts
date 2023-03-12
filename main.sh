@@ -4,41 +4,58 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt install sudo -y
+# color codes
+RESTORE='\033[0m'
 
+RED='\033[00;31m'
+GREEN='\033[00;32m'
+YELLOW='\033[00;33m'
+BLUE='\033[00;34m'
+PURPLE='\033[00;35m'
+CYAN='\033[00;36m'
+LIGHTGRAY='\033[00;37m'
 
-echo "#######################################################################################"
-echo "#"
-echo "#                                  VPSFREE.ES SCRIPTS"
-echo "#"
-echo "#                           Copyright (C) 2022 - 2023, VPSFREE.ES"
-echo "#"
-echo "#"
-echo "#######################################################################################"
-echo ""
-echo "* [0] Install Minecraft Server Files"
-echo "* [1] Install Warp to enable Ipv4 on Ipv6 only"
-echo "* [2] Download Playit files to make tunnels to V4 & V6"
-echo "* [3] Install PufferPanel"
-echo "* [4] Install WebPage"
-echo "* [5] Install CRDP/XRDP"
-echo "* [6] Install Basic Packages"
-echo "* [7] Install Pterodactyl Panel"
-echo "* [8] Exit"
+LRED='\033[01;31m'
+LGREEN='\033[01;32m'
+LYELLOW='\033[01;33m'
+LBLUE='\033[01;34m'
+LPURPLE='\033[01;35m'
+LCYAN='\033[01;36m'
+WHITE='\033[01;37m'
 
-read -p "Enter Input (0-7): " input
+echo -e "#######################################################################################"
+echo -e "#"
+echo -e "#                             ${RED}     VPSFREE.ES SCRIPTS" 
+echo -e "#"
+echo -e "#                       ${BLUE}   Copyright (C) 2022 - 2023, VPSFREE.ES"
+echo -e "#"
+echo -e "#"
+echo -e "#######################################################################################"
+echo -e ""
+echo -e "* ${GREEN} [0] Install Minecraft Server Files"
+echo -e "* ${GREEN} [1] Install Warp to enable Ipv4 on Ipv6 only"
+echo -e "* ${GREEN} [2] Download Playit files to make tunnels to V4 & V6"
+echo -e "* ${GREEN} [3] Install PufferPanel"
+echo -e "* ${GREEN} [4] Launch Website"
+echo -e "* ${GREEN} [5] Subdomain Scanner"
+echo -e "* ${GREEN} [6] Install CRDP/XRDP"
+echo -e "* ${GREEN} [7] Install Basic Packages"
+echo -e "* ${GREEN} [8] Install Pterodactyl Panel"
+echo -e "* ${RED} [9] Exit"
+
+read -p "Enter Input (0-9): " input
 
 case $input in
 
     0)
     apt update
-    wget -N https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh && bash install.sh;;
+    bash <(curl -s https://github.com/dxomg/vpsfreescripts/raw/main/vpsfreescripts/minecraftscript/install.sh)
     1)
     apt update
     apt install curl -y
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/warpv6/install.sh && bash install.sh;;
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/warpv6/install.sh);;
     2)
     apt update
-    apt install wget -y
     mkdir playit && cd playit
     wget https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/playit-0.9.3
     mv playit-0.9.3 playit
@@ -54,17 +71,19 @@ case $input in
     sudo pufferpanel user add
     sudo systemctl enable --now pufferpanel;;
     4)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh && bash install.sh;;
-    5)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh && bash install.sh;;
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/websitescript/install.sh);;
+    5) apt install php
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/webtools/subdomain-scan.sh);;
     6)
-    apt install git neofetch sudo
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/crdpscript/install.sh);;
+    7)
+    apt install git neofetch sudo wget zip curl nodejs python
     echo "##############################"
     echo ""
-    echo "Installed git and neofetch"
+    echo "Installed resources"
     echo ""
     echo "##############################";;
-    7)
-    wget -N https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/ptero/install.sh && bash install.sh;;
-    8) echo "Exit" && exit;;
+    8)
+    bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/vpsfreescripts/ptero/install.sh);;
+    9) echo "Exit" && exit;;
 esac
