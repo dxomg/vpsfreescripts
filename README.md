@@ -27,7 +27,7 @@ This script is associated with VPSFREE.es which offers 100% free vps with no cre
  • Playit Tunneling
 # Usage
 Launch Script : ```
-bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/main.sh)>```
+bash <(curl -s https://raw.githubusercontent.com/dxomg/vpsfreescripts/main/main.sh) ```
 # Contributers
  
 Here are the contributers of this project❤️ <br>
