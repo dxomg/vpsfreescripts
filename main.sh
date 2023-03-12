@@ -43,7 +43,7 @@ echo "* $GREEN [7] Install Basic Packages"
 echo "* $GREEN [8] Install Pterodactyl Panel"
 echo "* $RED [9] Exit"
 
-read -p "$LBLUE Enter Input (0-7): " input
+read -p "$LBLUE Enter Input (0-9): " input
 
 case $input in
 
