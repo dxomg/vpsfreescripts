@@ -23,27 +23,27 @@ LPURPLE='\033[01;35m'
 LCYAN='\033[01;36m'
 WHITE='\033[01;37m'
 
-echo "#######################################################################################"
-echo "#"
-echo "#                             ${RED}     VPSFREE.ES SCRIPTS" 
-echo "#"
-echo "#                       ${BLUE}   Copyright (C) 2022 - 2023, VPSFREE.ES"
-echo "#"
-echo "#"
-echo "#######################################################################################"
-echo ""
-echo "* ${GREEN} [0] Install Minecraft Server Files"
-echo "* ${GREEN} [1] Install Warp to enable Ipv4 on Ipv6 only"
-echo "* ${GREEN} [2] Download Playit files to make tunnels to V4 & V6"
-echo "* ${GREEN} [3] Install PufferPanel"
-echo "* ${GREEN} [4] Launch Website"
-echo "* ${GREEN} [5] Subdomain Scanner"
-echo "* ${GREEN} [6] Install CRDP/XRDP"
-echo "* ${GREEN} [7] Install Basic Packages"
-echo "* ${GREEN} [8] Install Pterodactyl Panel"
-echo "* ${RED} [9] Exit"
+echo -e "#######################################################################################"
+echo -e "#"
+echo -e "#                             ${RED}     VPSFREE.ES SCRIPTS" 
+echo -e "#"
+echo -e "#                       ${BLUE}   Copyright (C) 2022 - 2023, VPSFREE.ES"
+echo -e "#"
+echo -e "#"
+echo -e "#######################################################################################"
+echo -e ""
+echo -e "* ${GREEN} [0] Install Minecraft Server Files"
+echo -e "* ${GREEN} [1] Install Warp to enable Ipv4 on Ipv6 only"
+echo -e "* ${GREEN} [2] Download Playit files to make tunnels to V4 & V6"
+echo -e "* ${GREEN} [3] Install PufferPanel"
+echo -e "* ${GREEN} [4] Launch Website"
+echo -e "* ${GREEN} [5] Subdomain Scanner"
+echo -e "* ${GREEN} [6] Install CRDP/XRDP"
+echo -e "* ${GREEN} [7] Install Basic Packages"
+echo -e "* ${GREEN} [8] Install Pterodactyl Panel"
+echo -e "* ${RED} [9] Exit"
 
-read -p "$LBLUE Enter Input (0-9): " input
+read -p "Enter Input (0-9): " input
 
 case $input in
 
