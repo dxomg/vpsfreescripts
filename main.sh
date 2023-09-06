@@ -7,12 +7,12 @@ apt install sudo -y
 
 
 echo "#######################################################################################"
-echo "#"
-echo "#                                  VPSFREE.ES SCRIPTS"
-echo "#"
-echo "#                           Copyright (C) 2022 - 2023, VPSFREE.ES"
-echo "#"
-echo "#"
+echo "#                                                                                     #"
+echo "#                                  VPSFREE.ES SCRIPTS                                 #"
+echo "#                                                                                     #"
+echo "#                           Copyright (C) 2022 - 2023, VPSFREE.ES                     #"
+echo "#                                                                                     #"
+echo "#                                                                                     #"
 echo "#######################################################################################"
 echo ""
 echo "* [0] Install Minecraft Server Files"
